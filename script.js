@@ -57,3 +57,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+/* Cookie Banner with localStorage + fade effect */
+
+function showCookieBanner() {
+  const cookieBanner = document.getElementById("cb-cookie-banner");
+  cookieBanner.classList.add("show");
+}
+
+function hideCookieBanner() {
+  const cookieBanner = document.getElementById("cb-cookie-banner");
+  cookieBanner.classList.add("hide");
+  
+  // Save preference
+  localStorage.setItem("cb_isCookieAccepted", "yes");
+  
+  // Remove after fade-out transition
+  setTimeout(() => {
+    cookieBanner.style.display = "none";
+  }, 400);
+}
+
+function initializeCookieBanner() {
+  const isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
+  if (!isCookieAccepted || isCookieAccepted === "no") {
+    showCookieBanner();
+  }
+}
+
+window.onload = initializeCookieBanner;
+window.cb_hideCookieBanner = hideCookieBanner;
+

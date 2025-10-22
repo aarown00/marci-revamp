@@ -4,8 +4,79 @@ body {
   
 }
 
+#cb-cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  max-width: 420px;
+  background: rgba(33, 37, 41, 0.9);
+  color: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  z-index: 9999;
+  display: none;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#cb-cookie-banner.show {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#cb-cookie-banner.hide {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.cookie-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cookie-content span {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.cookie-content .learn-more {
+  color: #0dcaf0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.cookie-content .learn-more:hover {
+  color: #66d9ff;
+}
+
+.cookie-content .btn-accept {
+  background: linear-gradient(135deg, #0d6efd, #4f9eff);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cookie-content .btn-accept:hover {
+  background: linear-gradient(135deg, #0b5ed7, #1e88e5);
+}
+
+
+
 section {
-  scroll-margin-top: 90px; /* adjust to your navbar height */
+  scroll-margin-top: 90px; 
 }
 
 /* Hero Section */
