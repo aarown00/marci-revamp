@@ -1,0 +1,223 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  
+}
+
+section {
+  scroll-margin-top: 90px; /* adjust to your navbar height */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  color: #222 !important;
+}
+
+.nav-link {
+  color: #333 !important;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d4af37 !important; /* elegant gold hover */
+}
+
+/* Make the toggle buttons feel modern */
+.search-toggle .btn {
+  background-color: #f8f9fa;
+  color: #495057;
+  transition: all 0.25s ease;
+  border-color: #dee2e6;
+}
+
+.search-toggle .btn:hover {
+  background-color: #e9ecef;
+  color: #0d6efd;
+}
+
+/* Active (selected) state */
+.btn-check:checked + .btn {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+/* Search bar input */
+.search-bar input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Reduce space and make layout tight */
+.search-bar .input-group {
+  height: 46px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .image-box img {
+    height: 50vh;
+  }
+}
+
+.partner-logos {
+  width: 100%;
+}
+
+.partner-logo {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  max-width: 80%; /* so each logo fits nicely inside its column */
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .partner-logo {
+    height: 70px;
+  }
+}
+
+.img-fluid.object-fit-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.about-agent .card {
+  background-color: #111 !important; /* card dark background */
+  color: #fff; /* default text white */
+}
+.about-agent .card-body p,
+.about-agent .card-body footer {
+  color: #ccc; /* slightly muted text */
+}
+.about-agent blockquote p {
+  color: #fff;
+}
+.about-agent blockquote footer {
+  color: #aaa;
+}
+
+.carousel-img {
+    max-height: 600px;       /* keeps carousel compact */
+    width: auto;             /* maintain original aspect ratio */
+    object-fit: contain;     /* prevents pixelation / zoom stretching */
+    border-radius: 12px;     /* subtle rounded corners for modern look */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* soft shadow for floating effect */
+  }
+
+
+  .carousel-indicators {
+    bottom: -10px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-img {
+      max-height: 250px;     /* smaller height on mobile */
+    }
+  }
+
+/* Minimal arrow styling */
+.arrow-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.arrow-icon:hover {
+  color: #007bff; /* highlight on hover */
+}
+
+#property-search {
+  position: relative;
+  background-color: #000;
+}
+
+#property-search img {
+  object-fit: cover;
+}
+
+#property-search .card {
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  #property-search .card {
+    padding: 1rem;
+  }
+}
+
+#contact .card {
+  border-radius: 20px;
+}
+
+#contact .form-control {
+  border-radius: 8px;
+}
+
+#contact .form-control:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+  #contact .row.g-0 {
+    flex-direction: column;
+  }
+  #contact .col-md-6 {
+    padding: 2rem 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
