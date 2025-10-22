@@ -24,6 +24,19 @@ section {
   z-index: 1;
 }
 
+#hero .hero-content {
+    transform: translateY(-30px); /* moves content 30px higher */
+  }
+
+/* Keep selects visually uniform */
+  select.form-select {
+    padding-right: 2.5rem !important;
+    background-position: right 1rem center !important;
+    min-height: 50px;
+    line-height: 1.4;
+  }
+
+
 /* ===== Navbar ===== */
 .navbar {
   padding: 1rem 0;
