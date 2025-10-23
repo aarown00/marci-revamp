@@ -99,13 +99,42 @@ section {
     transform: translateY(-30px); /* moves content 30px higher */
   }
 
-/* Keep selects visually uniform */
-  select.form-select {
-    padding-right: 2.5rem !important;
-    background-position: right 1rem center !important;
-    min-height: 50px;
-    line-height: 1.4;
+/* Make form selects consistent */
+.search-bar select.form-select {
+  min-height: 50px;
+  line-height: 1.4;
+  padding-right: 2.5rem !important;
+  background-position: right 1rem center !important;
+}
+
+/* On small devices, make everything full width */
+@media (max-width: 768px) {
+  .search-bar .form-control,
+  .search-bar .form-select {
+    width: 100% !important;
   }
+  .search-bar button {
+    width: 100%;
+  }
+}
+
+.search-bar {
+  border-radius: 3rem; /* still rounded, not cartoonish */
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    border-radius: 1rem; /* smaller radius for narrow width */
+    padding: 1rem; /* tighter padding */
+  }
+}
+
+.search-bar {
+  transition: all 0.3s ease-in-out;
+}
+.search-bar:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
 
 
 /* ===== Navbar ===== */

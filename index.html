@@ -83,81 +83,90 @@
       </p>
       <h1 class="display-5 fw-bold mb-4">Find Your Dream Home</h1>
 
-      <!-- 🔍 One-Line Search Bar -->
-      <form class="d-flex align-items-center bg-white rounded-pill shadow-lg mx-auto px-3 py-2 gap-2 flex-wrap flex-lg-nowrap"
-            style="max-width: 1500px; background-color: rgba(255,255,255,0.95);">
+      <!-- 🔍 Responsive Search Bar -->
+<form class="search-bar bg-white shadow-lg mx-auto p-3 rounded-4"
+      style="max-width: 1500px; background-color: rgba(255,255,255,0.95);">
 
-        <!-- Keyword -->
-        <input type="text" class="form-control border-0 rounded-pill px-3 flex-grow-1"
-               placeholder="Search....." style="min-width: 180px;">
+  <div class="row g-2 align-items-center">
+    <!-- Keyword -->
+    <div class="col-12 col-md">
+      <input type="text" class="form-control border-0 rounded-pill px-3"
+             placeholder="Search..." style="min-height: 50px;">
+    </div>
 
-        <!-- Location -->
-        <select class="form-select border-0 rounded-pill px-3" style="width: 150px;">
-          <option selected>Location</option>
-          <option>Pahrump</option>
-          <option>Las Vegas</option>
-          <option>Henderson</option>
-        </select>
+    <!-- Location -->
+    <div class="col-6 col-md-auto">
+      <select class="form-select border-0 rounded-pill px-3">
+        <option selected>Location</option>
+        <option>Pahrump</option>
+        <option>Las Vegas</option>
+        <option>Henderson</option>
+      </select>
+    </div>
 
-        <!-- Type -->
-        <select class="form-select border-0 rounded-pill px-3" style="width: 150px;">
-          <option selected>Type</option>
-          <option>Single-story</option>
-          <option>Double-story</option>
-          <option>Duplex</option>
-        </select>
+    <!-- Type -->
+    <div class="col-6 col-md-auto">
+      <select class="form-select border-0 rounded-pill px-3">
+        <option selected>Type</option>
+        <option>Single-story</option>
+        <option>Double-story</option>
+        <option>Duplex</option>
+      </select>
+    </div>
 
-        <!-- Sort -->
-        <select class="form-select border-0 rounded-pill px-3" style="width: 160px;">
-          <option selected>Sort By</option>
-          <option>Newest</option>
-          <option>Oldest</option>
-          <option>Price: Low → High</option>
-          <option>Price: High → Low</option>
-          <option>Bedrooms (Low → High)</option>
-          <option>Bedrooms (High → Low)</option>
-          <option>Bathrooms (Low → High)</option>
-          <option>Bathrooms (High → Low)</option>
-        </select>
+    <!-- Sort -->
+    <div class="col-6 col-md-auto">
+      <select class="form-select border-0 rounded-pill px-3">
+        <option selected>Sort By</option>
+        <option>Newest</option>
+        <option>Oldest</option>
+        <option>Price: Low → High</option>
+        <option>Price: High → Low</option>
+      </select>
+    </div>
 
-        <!-- Bedrooms -->
-        <select class="form-select border-0 rounded-pill px-3" style="width: 150px;">
-          <option selected>Bedrooms</option>
-          <option>Any</option>
-          <option>Studio</option>
-          <option>1+</option>
-          <option>2+</option>
-          <option>3+</option>
-          <option>4+</option>
-          <option>5+</option>
-          <option>6+</option>
-        </select>
+    <!-- Bedrooms -->
+    <div class="col-6 col-md-auto">
+      <select class="form-select border-0 rounded-pill px-3">
+        <option selected>Bedrooms</option>
+        <option>Any</option>
+        <option>Studio</option>
+        <option>1+</option>
+        <option>2+</option>
+        <option>3+</option>
+      </select>
+    </div>
 
-        <!-- Bathrooms -->
-        <select class="form-select border-0 rounded-pill px-3" style="width: 150px;">
-          <option selected>Bathrooms</option>
-          <option>Any</option>
-          <option>1+</option>
-          <option>2+</option>
-          <option>3+</option>
-          <option>4+</option>
-          <option>5+</option>
-          <option>6+</option>
-        </select>
+    <!-- Bathrooms -->
+    <div class="col-6 col-md-auto">
+      <select class="form-select border-0 rounded-pill px-3">
+        <option selected>Bathrooms</option>
+        <option>Any</option>
+        <option>1+</option>
+        <option>2+</option>
+        <option>3+</option>
+      </select>
+    </div>
 
-        <!-- Price -->
-        <select class="form-select border-0 rounded-pill px-3" style="width: 160px;">
-          <option selected>Price Range</option>
-          <option>&lt;$100k</option>
-          <option>$200k–$500k</option>
-          <option>$500k+</option>
-        </select>
+    <!-- Price -->
+    <div class="col-6 col-md-auto">
+      <select class="form-select border-0 rounded-pill px-3">
+        <option selected>Price Range</option>
+        <option>&lt;$100k</option>
+        <option>$200k–$500k</option>
+        <option>$500k+</option>
+      </select>
+    </div>
 
-        <!-- Search Button -->
-        <button type="button" class="btn btn-primary rounded-pill px-4 py-2 d-flex align-items-center">
-          <i class="fa-solid fa-magnifying-glass me-2"></i>Search
-        </button>
-      </form>
+    <!-- Button -->
+    <div class="col-12 col-md-auto d-flex justify-content-center">
+      <button type="button" class="btn btn-primary rounded-pill px-4 py-2 w-100 w-md-auto">
+        <i class="fa-solid fa-magnifying-glass me-2"></i>Search
+      </button>
+    </div>
+  </div>
+</form>
+
     </div>
   </div>
 </section>
