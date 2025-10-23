@@ -380,6 +380,55 @@ section {
   }
 }
 
+/* Phones (portrait) */
+@media (max-width: 576px) {
+  #homes h2 {
+    font-size: 1.1rem;
+  }
+  #homes p {
+    font-size: 0.85rem;
+  }
+  #homes .card h5 {
+    font-size: 0.9rem;
+  }
+  #homes .card p {
+    font-size: 0.8rem;
+  }
+  #homes .card .btn {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+  #homes .position-absolute {
+    font-size: 0.8rem;
+    padding: 0.15rem 0.4rem;
+  }
+}
+
+/* Tablets (iPad, landscape phones) */
+@media (min-width: 577px) and (max-width: 991px) {
+  #homes h2 {
+    font-size: 1.4rem;
+  }
+  #homes p {
+    font-size: 1rem;
+  }
+  #homes .card h5 {
+    font-size: 1rem;
+  }
+  #homes .card p {
+    font-size: 0.9rem;
+  }
+  #homes .card .btn {
+    font-size: 0.8rem;
+  }
+  #homes .position-absolute {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+
+
 
 
 
