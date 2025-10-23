@@ -327,6 +327,60 @@ section {
   }
 }
 
+/* 🩵 Gradient overlay */
+.gradient-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+
+/* 🧱 Card image uniformity */
+.card img {
+  object-fit: cover;
+  height: 280px;
+}
+
+/* 💬 Make text scale nicely */
+@media (max-width: 768px) {
+  #homes h2 {
+    font-size: 1.25rem !important; /* smaller heading */
+  }
+
+  .card h5 {
+    font-size: 1rem !important;
+  }
+
+  .card p {
+    font-size: 0.9rem !important;
+  }
+
+  .card button {
+    width: 90% !important;
+    font-size: 0.85rem;
+  }
+
+  .card-img-overlay {
+    padding: 1rem !important;
+  }
+
+  .price-tag {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem !important;
+  }
+}
+
+/* 🖥️ On large screens, keep it premium */
+@media (min-width: 992px) {
+  .card img {
+    height: 300px;
+  }
+  .card h5 {
+    font-size: 1.25rem;
+  }
+  .card p {
+    font-size: 1.1rem;
+  }
+}
+
+
 
 
 
